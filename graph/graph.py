@@ -49,7 +49,7 @@ class Graph:
         return self.vertices[value] # get the Vertex object
 
     def get_next_word(self, curretn_vertex):
-        self.vertices[curretn_vertex.value].next_word()
+        return self.vertices[curretn_vertex.value].next_word()
 
     def generate_probability_mappings(self):
         for vertex in self.vertices.values():
